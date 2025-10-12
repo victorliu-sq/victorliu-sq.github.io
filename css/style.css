@@ -19,8 +19,8 @@ header {
 /*Applies to <img> elements with class profile.*/
 img.profile {
     /*Fixes the image width and height pixels.*/
-    width: 220px;
-    height: 220px;
+    width: 150px;
+    height: 200px;
     /*Ensures the image fills the box proportionally, cropping edges if needed instead of stretching.*/
     object-fit: cover;
     /*Adds 18 pixels of space between the image and the next element (the text block).*/
