@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 /*Applies to <img> elements with class profile.*/
@@ -51,7 +51,7 @@ h2 {
     /*Adds 4 pixels of space between the text and the bottom border.*/
     padding-bottom: 2px;
     /*Adds 18 pixels of space above the heading (to separate it from the previous section).*/
-    margin-top: 30px;
+    margin-top: 60px;
     /*Sets heading size to 28 pixels.*/
     font-size: 28px;
 }
