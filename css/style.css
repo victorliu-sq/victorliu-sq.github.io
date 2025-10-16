@@ -19,8 +19,8 @@ header {
 /*Applies to <img> elements with class profile.*/
 img.profile {
     /*Fixes the image width and height pixels.*/
-    width: 150px;
-    height: 200px;
+    width: 160px;
+    height: 230px;
     /*Ensures the image fills the box proportionally, cropping edges if needed instead of stretching.*/
     object-fit: cover;
     /*Adds 18 pixels of space between the image and the next element (the text block).*/
@@ -87,4 +87,27 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/*Network Lists */
+.links-text {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* ensures same left alignment as other lines */
+    text-align: left;
+}
+
+.links-text li {
+    display: inline;
+    margin-right: 0px;
+}
+
+.links-text li:not(:last-child)::after {
+    content: " | ";
+    color: #004aad;
+}
+
+.links-text a {
+    text-decoration: underline;
+    color: #004aad;
 }
