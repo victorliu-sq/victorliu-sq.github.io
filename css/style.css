@@ -1,12 +1,8 @@
 body {
     font-family: "Helvetica", "Arial", sans-serif;
-    /*  Adds outer spacing around the whole page. the top and bottom margin, followed by the left and right margin. */
     margin: 40px 40px;
-    /*  Sets the vertical space between lines of text */
     line-height: 1.6;
-    /*Sets the default text color to a dark gray (#333333), softer than pure black.*/
     color: #333;
-    /*Sets the page background to white (#ffffff).*/
     background-color: #fff;
 }
 
@@ -16,47 +12,37 @@ header {
     margin-bottom: 50px;
 }
 
-/*Applies to <img> elements with class profile.*/
+/* Profile image */
 img.profile {
-    /*Fixes the image width and height pixels.*/
     width: 160px;
     height: 230px;
-    /*Ensures the image fills the box proportionally, cropping edges if needed instead of stretching.*/
     object-fit: cover;
-    /*Adds 18 pixels of space between the image and the next element (the text block).*/
     margin-top: 11px;
     margin-right: 30px;
-    /*Draws a 1-pixel solid gray border (#cccccc) around the image.*/
     border: 1px solid #ccc;
 }
 
-/* Name Style */
+/* Name */
 h1 {
-    /*Removes the browser’s default extra space above and below <h1>.*/
     margin: 0;
     font-size: 30px;
 }
 
-/* Introduction Style */
+/* Paragraphs */
 p {
-    /*Adds 6 pixels of vertical spacing (top and bottom) between paragraphs. 0 left/right keeps them aligned.*/
     margin: 2px 0;
     font-size: 18px;
 }
 
-/* Section Title Style */
+/* Section titles */
 h2 {
-    /*Adds a 2-pixel gray line under the heading for visual separation.*/
     border-bottom: 2px solid #ccc;
-    /*Adds 4 pixels of space between the text and the bottom border.*/
     padding-bottom: 2px;
-    /*Adds 18 pixels of space above the heading (to separate it from the previous section).*/
     margin-top: 60px;
-    /*Sets heading size to 28 pixels.*/
     font-size: 28px;
 }
 
-
+/* Unordered lists */
 ul {
     margin-top: 0px;
     padding-left: 4px;
@@ -65,10 +51,11 @@ ul {
 }
 
 ul li {
-    margin-bottom: 10px;   /* adds space between items */
-    line-height: 1.6;      /* improves readability */
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
+/* Ordered lists */
 ol {
     margin-top: 0px;
     padding-left: 24px;
@@ -76,24 +63,26 @@ ol {
 }
 
 ol li {
-    margin-bottom: 10px;   /* consistent spacing for ordered lists too */
+    margin-bottom: 10px;
     line-height: 1.6;
 }
 
+/* Unified link style */
 a {
     color: #004aad;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 a:hover {
     text-decoration: underline;
+    opacity: 0.85;
 }
 
-/*Network Lists */
+/* Inline link list (GitHub | LinkedIn | CODE) */
 .links-text {
     list-style: none;
     padding: 0;
-    margin: 0; /* ensures same left alignment as other lines */
+    margin: 0;
     text-align: left;
 }
 
@@ -104,10 +93,5 @@ a:hover {
 
 .links-text li:not(:last-child)::after {
     content: " | ";
-    color: #004aad;
-}
-
-.links-text a {
-    text-decoration: underline;
     color: #004aad;
 }
