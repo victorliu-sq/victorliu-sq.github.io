@@ -95,3 +95,19 @@ a:hover {
     content: " | ";
     color: #004aad;
 }
+
+#publications .authors {
+    /*color: #777;*/
+}
+
+#publications .pub-meta {
+    font-size: 18px;
+}
+
+#publications .links-text {
+    font-size: 18px;
+}
+
+#publications .links-text a {
+    font-size: 18px;
+}
